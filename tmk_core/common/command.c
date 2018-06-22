@@ -357,7 +357,7 @@ static bool command_common(uint8_t code)
             clear_keyboard(); // clear to prevent stuck keys
             print("\n\nJumping to bootloader... ");
             #ifdef AUDIO_ENABLE
-                play_goodbye_tone();
+                //play_goodbye_tone();
             #endif
             _delay_ms(1000);
             bootloader_jump(); // not return
